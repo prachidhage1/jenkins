@@ -19,4 +19,25 @@ jenkins --version                                                               
 ec2ip copy:8080                                                                   #jenkins website open
 cat /var/lib/jenkins/secrets/initialAdminPassword                                 # fire command on ec2 to see jenkins password
 
-*new item select----enter an item name(myjavaproject)---freestyle project select--ok
+*new item select----enter an item name(myjavaproject)---freestyle project select--ok---break
+*github create java repository
+
+sudo apt-get install git -y
+git config --global user.name "prachi"
+git config --global user.name "prachidhage3@gmail.com"
+mkdir myjava
+cd myjava
+git init
+nano my.java
+class Simple{  
+    public static void main(String args[]){  
+     System.out.println("Hello Java");  
+    }  
+} 
+
+git remote add origin <link of github>
+git add .
+git commit -m "first commit"
+git push origin master
+name and password put of github
+
